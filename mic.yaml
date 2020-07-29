@@ -1,0 +1,29 @@
+step: 1
+name: refugee-trends-test3
+docker_image: refugee-trends-test3:latest
+framework: !!python/object/apply:mic.constants.Framework
+- !!python/tuple
+  - general
+  - mintproject/generic:latest
+container_name: refugee-trends-test3_f94ad37f
+parameters:
+  train_test_split:
+    name: train_test_split
+    default_value: 0.7
+    type: float
+    description: 'Train test split percentage (ratio of data used for training'
+inputs:
+  refugee_trend_file:
+    path: Migration_GTrends.csv
+    format: csv
+code_files:
+  model_r:
+    path: model.R
+    format: R
+outputs:
+  accuracy_csv:
+    path: accuracy.csv
+    format: csv
+  rplots_pdf:
+    path: Rplots.pdf
+    format: pdf

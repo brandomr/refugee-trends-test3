@@ -1,0 +1,88 @@
+mic   _utils.py          INFO     Log file created
+mic   _utils.py          INFO     OS: {'name': 'Linux', 'data': {'version': '#25~18.04.1-Ubuntu SMP Fri Jun 5 15:18:30 UTC 2020', 'release': '5.3.0-1023-aws', 'platform': 'Linux-5.3.0-1023-aws-x86_64-with-debian-buster-sid'}}
+mic   _utils.py          INFO     MIC Version: 1.3.2
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'start', 'command_parameters': {'name': {'value': 'refugee-trends-test3', 'type': 'str'}, 'image': {'value': None, 'type': 'NoneType'}}}
+mic   initialization.py  INFO     When creating base dir found base directory already exists: /home/ubuntu/dev/refugee-trends-3/mic
+mic   initialization.py  INFO     MIC has initialized the component
+mic   initialization.py  DEBUG    detecting framework(s): [<Framework.GENERIC: ('general', 'mintproject/generic:latest')>, <Framework.PYTHON37: ('python3.7', 'mintproject/python:3.7', '.py')>, <Framework.PYTHON38: ('python3.8', 'mintproject/python:3.8', '.py')>, <Framework.CONDA: ('conda4.7.12', 'mintproject/conda:4.7.12', '.py')>]
+mic   initialization.py  DEBUG    OS name: linux
+mic   docker.py          INFO     Downloading and building base docker image
+mic   commands.py        DEBUG    Converting any CRLF to LF: ['mic.log', 'mic.yaml', 'Dockerfile', 'entrypoint.sh']
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/home/ubuntu/dev/refugee-trends-3/mic/mic.yaml', 'data': {'key': 'name', 'value': 'refugee-trends-test3'}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/home/ubuntu/dev/refugee-trends-3/mic/mic.yaml', 'data': {'key': 'docker_image', 'value': 'refugee-trends-test3:latest'}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/home/ubuntu/dev/refugee-trends-3/mic/mic.yaml', 'data': {'key': 'framework', 'value': <Framework.GENERIC: ('general', 'mintproject/generic:latest')>}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/home/ubuntu/dev/refugee-trends-3/mic/mic.yaml', 'data': {'key': 'container_name', 'value': 'refugee-trends-test3_4673239a'}}
+mic   commands.py        INFO     start done
+mic   _utils.py          INFO     Log file created
+mic   _utils.py          INFO     OS: {'name': 'Linux', 'data': {'version': '#25~18.04.1-Ubuntu SMP Fri Jun 5 15:18:30 UTC 2020', 'release': '5.3.0-1023-aws', 'platform': 'Linux-5.3.0-1023-aws-x86_64-with-debian-buster-sid'}}
+mic   _utils.py          INFO     MIC Version: 1.3.2
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'start', 'command_parameters': {'name': {'value': 'refugee-trends-test3', 'type': 'str'}, 'image': {'value': None, 'type': 'NoneType'}}}
+mic   initialization.py  INFO     When creating base dir found base directory already exists: /home/ubuntu/dev/refugee-trends-3/mic
+mic   initialization.py  INFO     MIC has initialized the component
+mic   initialization.py  DEBUG    detecting framework(s): [<Framework.GENERIC: ('general', 'mintproject/generic:latest')>, <Framework.PYTHON37: ('python3.7', 'mintproject/python:3.7', '.py')>, <Framework.PYTHON38: ('python3.8', 'mintproject/python:3.8', '.py')>, <Framework.CONDA: ('conda4.7.12', 'mintproject/conda:4.7.12', '.py')>]
+mic   initialization.py  DEBUG    OS name: linux
+mic   docker.py          INFO     Downloading and building base docker image
+mic   commands.py        DEBUG    Converting any CRLF to LF: ['mic.log', 'mic.yaml', 'Dockerfile', 'entrypoint.sh']
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/home/ubuntu/dev/refugee-trends-3/mic/mic.yaml', 'data': {'key': 'name', 'value': 'refugee-trends-test3'}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/home/ubuntu/dev/refugee-trends-3/mic/mic.yaml', 'data': {'key': 'docker_image', 'value': 'refugee-trends-test3:latest'}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/home/ubuntu/dev/refugee-trends-3/mic/mic.yaml', 'data': {'key': 'framework', 'value': <Framework.GENERIC: ('general', 'mintproject/generic:latest')>}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/home/ubuntu/dev/refugee-trends-3/mic/mic.yaml', 'data': {'key': 'container_name', 'value': 'refugee-trends-test3_f94ad37f'}}
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'trace', 'command_parameters': {'invocation_command': {'value': ('Rscript', 'model.R', 'Migration_GTrends.csv', '0.8'), 'type': 'tuple'}, 'continu': {'value': None, 'type': 'NoneType'}, 'overwrite': {'value': None, 'type': 'NoneType'}}}
+mic   commands.py        DEBUG    Append mode: None
+mic   commands.py        INFO     trace done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'add_parameters', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}, 'name': {'value': 'train_test_split', 'type': 'str'}, 'value': {'value': 0.7, 'type': 'float'}, 'overwrite': {'value': False, 'type': 'bool'}, 'description': {'value': None, 'type': 'NoneType'}}}
+mic   commands.py        DEBUG    Adding parameter: {'train_test_split': {'name': 'train_test_split', 'default_value': 0.7, 'type': 'float', 'description': ''}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/tmp/mint/mic/mic.yaml', 'data': {'key': 'parameters', 'value': {'train_test_split': {'name': 'train_test_split', 'default_value': 0.7, 'type': 'float', 'description': ''}}}}
+mic   commands.py        INFO     add_parameters done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'inputs', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}, 'custom_inputs': {'value': (), 'type': 'tuple'}}}
+mic   commands.py        DEBUG    Inputs found from reprozip: ['/tmp/mint/Rplots.pdf', '/tmp/mint/accuracy.csv', '/tmp/mint/model.R', '/tmp/mint/Migration_GTrends.csv']
+mic   reprozip.py        DEBUG    Adding executable: model.R
+mic   commands.py        DEBUG    code files found from reprozip: ['/tmp/mint/model.R']
+mic   commands.py        INFO     Ignoring the config as an input: /tmp/mint/Rplots.pdf
+mic   commands.py        INFO     Ignoring the config as an input: /tmp/mint/accuracy.csv
+mic   commands.py        INFO     Ignoring the config as an input: /tmp/mint/model.R
+mic   commands.py        INFO     Input added: Migration_GTrends.csv
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/tmp/mint/mic/mic.yaml', 'data': {'key': 'inputs', 'value': {'migration_gtrends_csv': {'path': 'Migration_GTrends.csv', 'format': 'csv'}}}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/tmp/mint/mic/mic.yaml', 'data': {'key': 'code_files', 'value': {'model_r': {'path': 'model.R', 'format': 'R'}}}}
+mic   commands.py        INFO     inputs done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'outputs', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}, 'custom_outputs': {'value': (), 'type': 'tuple'}}}
+mic   commands.py        DEBUG    Outputs found from reprozip: ['/tmp/mint/accuracy.csv', '/tmp/mint/Rplots.pdf']
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/tmp/mint/mic/mic.yaml', 'data': {'key': 'outputs', 'value': {'accuracy_csv': {'path': 'accuracy.csv', 'format': 'csv'}, 'rplots_pdf': {'path': 'Rplots.pdf', 'format': 'pdf'}}}}
+mic   commands.py        INFO     outputs done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'wrapper', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}}}
+mic   commands.py        INFO     Generating wrapper code
+mic   reprozip.py        DEBUG    Pre runner code: ''
+mic   reprozip.py        DEBUG    Runner code: '\npushd .\nRscript model.R ${migration_gtrends_csv} 0.8\npopd'
+mic   initialization.py  DEBUG    run file rendered
+mic   initialization.py  DEBUG    io file rendered
+mic   commands.py        INFO     wrapper done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'wrapper', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}}}
+mic   commands.py        INFO     Generating wrapper code
+mic   reprozip.py        DEBUG    Pre runner code: ''
+mic   reprozip.py        DEBUG    Runner code: '\npushd .\nRscript model.R ${refugee_trend_file} 0.8\npopd'
+mic   initialization.py  DEBUG    run file rendered
+mic   initialization.py  DEBUG    io file rendered
+mic   commands.py        INFO     wrapper done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'run', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}}}
+mic   commands.py        INFO     Run passed
+mic   commands.py        INFO     run done
+mic   commands.py        INFO     start done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'upload', 'command_parameters': {'mic_file': {'value': '/home/ubuntu/dev/refugee-trends-3/mic/mic.yaml', 'type': 'str'}, 'profile': {'value': 'default', 'type': 'str'}, 'model_configuration': {'value': True, 'type': 'bool'}, 'data_transformation': {'value': None, 'type': 'NoneType'}}}
+mic   github.py          INFO     Creating the git repository
+mic   github.py          INFO     Compressing code
+mic   github.py          INFO     Creating a new commit
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'upload', 'command_parameters': {'mic_file': {'value': '/home/ubuntu/dev/refugee-trends-3/mic/mic.yaml', 'type': 'str'}, 'profile': {'value': 'default', 'type': 'str'}, 'model_configuration': {'value': True, 'type': 'bool'}, 'data_transformation': {'value': None, 'type': 'NoneType'}}}
+mic   github.py          INFO     Creating the git repository
+mic   github.py          INFO     Compressing code
+mic   github.py          INFO     Creating a new commit

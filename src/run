@@ -1,0 +1,30 @@
+#!/bin/bash
+set +x
+set -e
+. .colors.sh
+
+BASEDIR=$PWD
+. $BASEDIR/io.sh 1 1 2 "$@"
+CURDIR=`pwd`
+## INPUTS VARIABLES
+refugee_trend_file=${INPUTS1}
+
+
+## PARAMETERS VARIABLES
+train_test_split=${PARAMS1}
+
+
+set -xe
+
+####### WRITE YOUR INVOCATION LINE AFTER THIS COMMENT
+
+    
+pushd .
+Rscript model.R ${refugee_trend_file} ${train_test_split}
+popd
+
+set +x
+echo -e "$(c G)[success] The model has exited with code SUCCESS"
+####### WRITE YOUR INVOCATION LINE BEFORE THIS COMMENT
+cd $BASEDIR
+. $BASEDIR/output.sh
